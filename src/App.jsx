@@ -113,7 +113,7 @@ function Navbar() {
       </nav>
       <a
         className="btn-outline"
-        href="/resume_mashak_balaganoorr_1.pdf"
+        href="/professionalportpolio/resume_mashak_balaganoorr_1.pdf"
         download
       >
         Download CV
@@ -200,7 +200,7 @@ function About() {
         </motion.div>
         <motion.div {...fade} className="portrait glass">
           <img
-            src="/profile.png"
+            src="/professionalportpolio/profile.png"
             alt="Mashak Balaganoor"
             onError={(e) => (e.currentTarget.style.display = "none")}
           />

@@ -1,4 +1,15 @@
 import { motion } from "framer-motion";
+// import { FaJava } from "react-icons/fa";
+import { FaJava, FaDocker, FaJenkins } from "react-icons/fa";
+
+import {
+  SiSpringboot,
+  SiApachekafka,
+  SiRedhatopenshift,
+  SiKubernetes,
+  SiHelm,
+  SiPostgresql,
+} from "react-icons/si";
 
 const NAV = [
   "Home",
@@ -17,7 +28,39 @@ const STATS = [
   ["99.99%", "Availability"],
   ["Millions", "Transactions"],
 ];
-const CHIPS = ["Spring Boot", "Kafka", "Docker", "OpenShift"];
+// const CHIPS = ["Spring Boot", "Kafka", "Docker", "OpenShift"];
+const CHIPS = [
+  {
+    name: "Spring Boot",
+    icon: <SiSpringboot />,
+    style: { top: "10%", left: "5%" },
+  },
+  {
+    name: "Kafka",
+    icon: <SiApachekafka />,
+    style: { top: "10%", right: "5%" },
+  },
+  {
+    name: "Docker",
+    icon: <FaDocker />,
+    style: { top: "42%", right: "-2%" },
+  },
+  {
+    name: "OpenShift",
+    icon: <SiRedhatopenshift />,
+    style: { bottom: "10%", right: "5%" },
+  },
+  {
+    name: "Helm",
+    icon: <SiHelm />,
+    style: { bottom: "10%", left: "5%" },
+  },
+  {
+    name: "Jenkins",
+    icon: <FaJenkins />,
+    style: { top: "42%", left: "-2%" },
+  },
+];
 const HIGHLIGHTS = [
   "Payment Integration",
   "Microservices Architecture",
@@ -148,18 +191,20 @@ function Hero() {
         <motion.div
           className="cube"
           animate={{ y: [0, -14, 0] }}
-          transition={{ repeat: Infinity, duration: 4 }}
+          transition={{ repeat: Infinity, duration: 6 }}
         >
-          ☕
+          <FaJava size={90} color="#f89820" />
         </motion.div>
-        {CHIPS.map((c, i) => (
+        {CHIPS.map((chip, i) => (
           <motion.span
-            key={c}
-            className={`chip chip${i}`}
-            animate={{ y: [0, i % 2 ? 10 : -10, 0] }}
+            key={chip.name}
+            className="chip"
+            style={chip.style}
+            animate={{ y: [0, i % 2 ? 8 : -8, 0] }}
             transition={{ repeat: Infinity, duration: 3 + i }}
           >
-            {c}
+            <span className="chip-icon">{chip.icon}</span>
+            {chip.name}
           </motion.span>
         ))}
       </div>

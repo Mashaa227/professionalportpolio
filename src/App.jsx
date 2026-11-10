@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 // import { FaJava } from "react-icons/fa";
 import { FaJava, FaDocker, FaJenkins } from "react-icons/fa";
+import Footer from "./Footer";
 
 import {
   SiSpringboot,
@@ -457,21 +458,6 @@ function Contact() {
   );
 }
 
-{
-  CONTACT.map((item) => (
-    <a
-      key={item.label}
-      href={item.link}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="glass contact"
-    >
-      <span>{item.icon}</span>
-      <span>{item.label}</span>
-    </a>
-  ));
-}
-
 export default function App() {
   return (
     <>
@@ -483,11 +469,9 @@ export default function App() {
         <Architecture />
         <Skills />
         <Contact />
+        {/* <ContactCTA /> */}
       </main>
-      <footer className="footer">
-        © 2025 Mashak Balaganoor. All rights reserved. Made with ♥ using React
-        &amp; Framer Motion
-      </footer>
+      <Footer />
     </>
   );
 }

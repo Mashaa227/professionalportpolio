@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 // import { FaJava } from "react-icons/fa";
-import { FaJava, FaDocker, FaJenkins } from "react-icons/fa";
+import { FaJava, FaDocker, FaJenkins, FaEnvelope } from "react-icons/fa";
 import Footer from "./Footer";
 
 import {
@@ -451,7 +451,7 @@ function Contact() {
             ease: "easeInOut",
           }}
         >
-          ✉️
+          <FaEnvelope />
         </motion.div>
       </div>
     </section>

@@ -344,9 +344,15 @@ small {
   width: 20px;
 }
 .envelope {
-  font-size: 180px;
-  text-align: center;
-  filter: drop-shadow(0 0 40px var(--p));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #dee2ec;
+  filter: drop-shadow(0 0 30px #5777d8);
+}
+.envelope svg {
+  width: 280px;
+  height: 280px;
 }
 .footer {
   text-align: center;

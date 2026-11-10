@@ -442,17 +442,19 @@ function Contact() {
           ))}
         </motion.div>
 
-        <motion.div
-          className="envelope"
-          animate={{ rotate: [-4, 4, -4] }}
-          transition={{
-            duration: 5,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-        >
-          <FaEnvelope />
-        </motion.div>
+        <div className="contact-right">
+          <motion.div
+            className="envelope"
+            animate={{ rotate: [-4, 4, -4] }}
+            transition={{
+              duration: 5,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+          >
+            <FaEnvelope />
+          </motion.div>
+        </div>
       </div>
     </section>
   );

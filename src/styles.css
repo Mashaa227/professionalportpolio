@@ -347,12 +347,14 @@ small {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #dee2ec;
-  filter: drop-shadow(0 0 30px #5777d8);
+  width: 100%;
+  height: 100%;
+  color: #dfe2ea;
+  filter: drop-shadow(0 0 40px #4f7cff);
 }
 .envelope svg {
-  width: 280px;
-  height: 280px;
+  width: 200px;
+  height: 200px;
 }
 .footer {
   text-align: center;
@@ -442,7 +444,9 @@ small {
 .contact-right {
   flex: 1;
   display: flex;
-  justify-content: center;
+  justify-content: center; /* Horizontal center */
+  align-items: center; /* Vertical center */
+  min-height: 500px;
 }
 
 .contact-right img {

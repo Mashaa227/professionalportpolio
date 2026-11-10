@@ -43,7 +43,7 @@ function Footer() {
       <div className="footer-divider"></div>
 
       <div className="footer-bottom">
-        <p>© 2025 Mashak Balaganoor. All rights reserved.</p>
+        <p>© 2026 Mashak Balaganoor. All rights reserved.</p>
 
         <p>
           Designed & Developed by Mashak Balaganoor{" "}
